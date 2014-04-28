@@ -1,0 +1,22 @@
+<script>
+//Escriba una función llamada findAll que reciba un elemento a buscar y una lista, y devuelva una lista con los índices de todas las posiciones en las que aparece el elemento en la lista. 
+//En caso de que el elemento no esté en la lista, deberá devolver una lista vacía.
+
+    function countAll(lista1, lista2) {
+        var contador = 0;
+        for (var indice1 = 0; indice1 < lista1.length; indice1++) {
+
+            for (var indice2 = 0; indice2 < lista2.length; indice2++) {
+                if (lista1[indice1] === lista2[indice2]) {
+                    
+                    contador++;
+                }
+            }
+        }
+        return contador;
+    }
+
+
+    console.log(countAll([2, 9], [2, 3, 5, 2, 8, 2, 9]));
+
+</script>

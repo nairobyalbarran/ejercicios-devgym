@@ -1,0 +1,28 @@
+<script>
+//Escriba una función llamada find que reciba un elemento a buscar y una lista, y devuelva el índice del elemento en la lista.
+//En caso de que el elemento no esté en la lista, deberá devolver -1.
+
+    function findFirst(elemento, lista) {
+        var  lugar;
+        for (var indice = 0; indice < lista.length; indice++)
+        {
+            if (elemento === lista[indice]) {
+                break;
+            }
+        }
+        if (indice < lista.length) {
+           lugar = indice;
+           
+        } else {
+            lugar = -1;
+        }
+        return lugar;
+
+    }
+
+    //var a = lista.indexOf(elemento);
+    //return (a);
+    console.log(findFirst(1, [1, 3, 5, 2, 8, 2, 9]));
+
+</script>
+

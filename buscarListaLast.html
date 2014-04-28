@@ -1,0 +1,29 @@
+<script>
+//Escriba una función llamada findLast que reciba un elemento a buscar y una lista, y devuelva el último índice del elemento en la lista. 
+//En caso de que el elemento no esté en la lista, deberá devolver -1..
+
+    function findLast(elemento, lista) {
+        var lugar=-1;
+
+        for (var indice = 0; indice < lista.length; indice++)
+        {
+            if (elemento === lista[indice])
+            {
+                if (indice < lista.length) {
+                    lugar = indice;
+                } else {
+                    lugar;
+                }
+            }
+        }
+
+
+        return lugar;
+
+    }
+
+
+    console.log(findLast(1, [1, 3, 5, 2, 8, 2, 9]));
+
+</script>
+

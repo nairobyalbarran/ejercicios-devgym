@@ -1,0 +1,26 @@
+<script>
+//Escriba una función llamada uppercase que reciba una lista de cadenas y 
+//devuelva el contenido de la lista en mayúsculas 
+
+    function uppercase(lista) {
+        nuevaLista = [];
+        var elemento, respuesta;
+
+        for (var ind = 0; ind < lista.length; ind++) {
+
+            elemento = lista[ind];
+
+            respuesta = elemento.toUpperCase();
+            //elemento = lista[ind].toUpperCase ;
+            nuevaLista.push(respuesta);
+            //respuesta2=JSON.stringify(nuevaLista);
+        }
+ 
+        return nuevaLista;
+    }
+    uppercase("[perro, gato, jiraga, hipopotamo, foca]");
+
+
+
+</script>
+
