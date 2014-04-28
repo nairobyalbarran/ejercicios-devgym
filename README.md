@@ -1,1 +1,1 @@
-# Solución a ejercicios propuestos en DevGym
+# Solución a ejercicios de Javascript propuestos en DevGym
