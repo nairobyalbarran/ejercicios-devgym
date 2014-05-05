@@ -1,0 +1,27 @@
+<script>
+//Escriba una función llamada countEach1 que reciba dos listas, y devuelva una lista con la 
+//cantidad de veces que se repite cada elemento de la primera lista, en la segunda.
+//countEach1(['hola'], ['Este', 'es', 'un', 'ejemplo'])
+//[0]
+//countEach1([2, 9], [2, 3, 5, 2, 8, 2, 9])
+//[3, 1]
+
+    function countEach1(lista1, lista2) {
+        var contador = 0;
+        var nuevaLista = [];
+
+        for (var indice1 = 0; indice1 < lista1.length; indice1++) {
+
+            for (var indice2 = 0; indice2 < lista2.length; indice2++) {
+                if (lista1[indice1] === lista2[indice2]) {
+                    contador++;
+                }
+            }
+            nuevaLista.push(contador);
+            contador = 0;
+        }
+        return nuevaLista;
+    }
+    console.log(countEach1([2, 9], [2, 3, 5, 2, 8, 2, 9]));
+
+</script>
